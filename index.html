@@ -75,7 +75,7 @@
       //console.log(e);
       lat = e.latlng.lat;
       lng = e.latlng.lng;
-      var form = '<div id="formdiv"><form role="form" id="projectform"><div class="form-group"><div class="form-group"><label for="description" class="requiredField">Inserire Codice POS</label><textarea class="form-control" rows="3" id="descrip" placeholder="es: 9000775777"></textarea></div><em class="text-muted">Cliccare "Invia" per registrare le coordinate</em><div id="formHelp"></div><hr /><button type="submit" id="submit" class="btn btn-default btn-sm">Invia</button></form></div>';
+      var form = '<div id="formdiv"><form role="form" id="projectform"><div class="form-group"><div class="form-group"><label for="description" class="requiredField">Inserire Codice POS</label><textarea class="form-control" rows="3" id="descrip" placeholder="es: 9000775777"></textarea></div><em class="text-muted">Se la posizione non fosse precisa, cliccare sulla mappa nel punto esatto in cui si trova il PdV</em><div id="formHelp"></div><hr /><button type="submit" id="submit" class="btn btn-default btn-sm">Invia</button></form></div>';
       if (e.accuracy) {
         var radius = (e.accuracy / 2) * 3.28084;
         circle = L.circle(e.latlng, radius).addTo(map);
