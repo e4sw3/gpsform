@@ -9,7 +9,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://e4sw3.github.io/gpsform/" />
   <meta property="og:image" content="https://raw.githubusercontent.com/aogdp/gpsform/gh-pages/img/gpsform.png" />
-  <meta property="og:description" content="A web app that uses Google Forms and Leaflet to collect data using a web browser." />
+  <meta property="og:description" content="Mappatura Coordinate PdV." />
   <!--Bootstrap for form-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <!--leaflet-->
@@ -75,7 +75,7 @@
       //console.log(e);
       lat = e.latlng.lat;
       lng = e.latlng.lng;
-      var form = '<div id="formdiv"><form role="form" id="projectform"><div class="form-group"><div class="form-group"><label for="description" class="requiredField">GPS Collection Form</label><textarea class="form-control" rows="3" id="descrip" placeholder="Text input..."></textarea></div><em class="text-muted">Click submit to add a point at this location.</em><div id="formHelp"></div><hr /><button type="submit" id="submit" class="btn btn-default btn-sm">Submit</button></form></div>';
+      var form = '<div id="formdiv"><form role="form" id="projectform"><div class="form-group"><div class="form-group"><label for="description" class="requiredField">Inserire Codice POS</label><textarea class="form-control" rows="3" id="descrip" placeholder="es: 9000775777"></textarea></div><em class="text-muted">Cliccare "Invia" per registrare le coordinate</em><div id="formHelp"></div><hr /><button type="submit" id="submit" class="btn btn-default btn-sm">Invia</button></form></div>';
       if (e.accuracy) {
         var radius = (e.accuracy / 2) * 3.28084;
         circle = L.circle(e.latlng, radius).addTo(map);
