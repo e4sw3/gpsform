@@ -28,10 +28,10 @@
     <div id="formdiv">
       <form role="form" id="projectform">
         <div class="form-group">
-          <label for="codeInput" class="requiredField">Codice POS</label><br />
+          <label for="codeInput" class="requiredField">Registra posizione del Codice POS</label><br />
           <input id="codeInput" type="text" class="requiredField" value="{{code}}" required disabled></input>
         </div>
-        <em class="text-muted">Se la posizione non fosse precisa, cliccare sulla mappa nel punto esatto in cui si trova il PdV</em>
+        <em class="text-muted">Se la posizione proposta autimaticamente non fosse precisa, cliccare sulla mappa nel punto esatto in cui si trova il PdV</em>
         <div id="formHelp"></div>
         <hr />
         <button type="submit" id="submit" class="btn btn-default btn-sm">Salva coordinate</button>
@@ -40,7 +40,7 @@
   </script>
   <script id="iframe-template" type="text/template">
     <iframe src="https://docs.google.com/forms/d/1ZOm8rm6010TJwfmlqcaEkzFcj6vsSgTSaCdW2pyUG_c/formResponse?{{querystring}}"
-            seamless scrolling="no" style="overflow:hidden;height:375px;width:100%;border:lightgray solid thin;">
+            seamless scrolling="no" style="overflow:hidden;height:200px;width:100%;border:lightgray solid thin;">
     </iframe>
   </script>
 
