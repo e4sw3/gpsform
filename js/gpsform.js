@@ -77,7 +77,7 @@ function collectData(e) {
           $('#formdiv').html(iframeHtml);
 
         } else {
-          $('#formHelp').html('<span style="color:red;">Please enter a description of your point.</span>')
+          $('#formHelp').html('<span style="color:red;">Errore: non è presente nessun Codice POS.</span>')
         }
       });
     });
