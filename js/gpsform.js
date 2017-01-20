@@ -25,7 +25,7 @@ map.setView([45,10], 8);
 
 //Add a basemap
 var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 1,
+    maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
@@ -54,7 +54,7 @@ function collectData(e) {
       var radius = (e.accuracy / 2) * 3.28084;
       circle = L.circle(e.latlng, radius).addTo(map);
     }
-    marker = L.marker(e.latlng).addTo(map).bindPopup(popupHtml, {maxWidth:250});
+    marker = L.marker(e.latlng).addTo(map).bindPopup(popupHtml, {maxWidth:200});
     
     //if you try and open the popup right away the location may not be ready, eventhough it's firing after locationfound
     setTimeout(function() {
