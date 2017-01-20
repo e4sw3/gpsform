@@ -54,7 +54,7 @@ function collectData(e) {
       var radius = (e.accuracy / 2) * 3.28084;
       circle = L.circle(e.latlng, radius).addTo(map);
     }
-    marker = L.marker(e.latlng).addTo(map).bindPopup(popupHtml, {maxWidth:200});
+    marker = L.marker(e.latlng).addTo(map).bindPopup(popupHtml, {maxWidth:230}, {maxHeight:200});
     
     //if you try and open the popup right away the location may not be ready, eventhough it's firing after locationfound
     setTimeout(function() {
