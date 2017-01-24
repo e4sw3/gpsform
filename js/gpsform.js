@@ -51,7 +51,7 @@ function collectData(e) {
     var popupHtml = Mustache.render(popupTemplate, {code});
 
     if (e.accuracy) {
-      var radius = (e.accuracy / 2) * 3.28084;
+      var radius = (e.accuracy / 2) * 0.6;
       circle = L.circle(e.latlng, radius).addTo(map);
     }
     marker = L.marker(e.latlng).addTo(map).bindPopup(popupHtml, {maxWidth:230}, {maxHeight:200});
